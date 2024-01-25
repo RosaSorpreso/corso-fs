@@ -1,0 +1,89 @@
+body {
+    background-image: url(../img/sfondo.png);
+    background-position: center;
+    margin: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header */
+
+#header {
+    background-color: #0085a3;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 20px 0;
+    box-shadow: 3px 3px 5px rgba(114, 113, 113, 0.388);
+}
+
+#logo {
+    width: 300px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+header p {
+    padding-bottom: 20px;
+}
+
+menu li{
+    list-style-type: none;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.menu {
+    text-decoration: none;
+}
+
+.menu:visited {
+    color: white;
+}
+
+/* Main box */
+
+#main-box {
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 5px rgba(114, 113, 113, 0.388);
+    padding: 30px 15px;
+    font-size: 1.2rem;
+}
+
+#h1 {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 50px;
+    padding-bottom: 20px;
+}
+
+#address {
+    font-size: 0.9rem;
+    color: gray;
+    padding-bottom: 20px;
+}
+
+main p {
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+
+.span {
+    color: #9e268c;
+    font-weight: 600;
+}
+
+ul li {
+    line-height: 30px;
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
+.code {
+    background-color: #e0e1e2;
+    border: 1px solid #918f90;
+    border-radius: 0.5rem;
+}
