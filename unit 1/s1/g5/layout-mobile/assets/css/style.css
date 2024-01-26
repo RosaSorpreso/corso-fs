@@ -1,0 +1,130 @@
+
+body {
+    color: #393d41 ;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+/* header */
+
+header {
+    background-color: black;
+}
+
+#logo {
+    width: 130px;
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* main */
+
+#main-box {
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-size: contain;
+    padding: 40px 15px;
+}
+
+h1, h2, h3, h4, h5 {
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10px;
+}
+
+h1, h2, h4 {
+    color: #25a2c3;
+}
+
+h1, h3, h5 {
+    font-size: 2.5rem;
+}
+
+#main-box p {
+    padding-bottom: 30px;
+}
+
+#main-box a {
+    background-color: #f04c2f;
+    font-family: 'Montserrat', sans-serif;;
+    color: white;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+}
+
+.content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.p {
+    padding: 15px 30px;
+}
+
+.background-img {
+    background-image: url(../img/notebook.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#cite {
+    background-color: #e22d0e;
+    color: white;
+    padding: 30px 30px;
+}
+
+blockquote {
+    font-style: italic;
+    padding: 30px 5px;
+}
+
+#cite address {
+    font-size: 0.8rem;
+}
+
+/* aside */
+
+.article {
+    margin: 30px 30px;
+    border: 1px solid #dee1e3;
+}
+
+.img {
+    width: 100%;
+}
+
+.article-structure {
+    padding: 35px 10px;
+}
+
+/* footer */
+
+footer {
+    background-color: #25a2c3;
+    color: #c8e7f0;
+}
+
+h5 {
+    color: white;
+}
+
+footer a {
+    color: #c8e7f0;
+}
+
+address a {
+    display: block;
+}
+
