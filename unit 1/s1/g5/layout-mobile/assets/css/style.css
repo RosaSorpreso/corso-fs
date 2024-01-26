@@ -97,7 +97,7 @@ blockquote {
 /* aside */
 
 .article {
-    margin: 30px 30px;
+    margin: 40px 30px;
     border: 1px solid #dee1e3;
 }
 
@@ -114,6 +114,7 @@ blockquote {
 footer {
     background-color: #25a2c3;
     color: #c8e7f0;
+    padding: 50px 30px;
 }
 
 h5 {
@@ -128,3 +129,21 @@ address a {
     display: block;
 }
 
+i {
+    color: white;
+}
+
+footer address {
+    padding-bottom: 30px;
+}
+
+#border {
+    border-top: 1px solid #c8e7f0;
+    width: 200px;
+    margin: 0 auto
+}
+
+footer > p {
+    font-size: 1rem;
+    padding-top: 30px;
+}
