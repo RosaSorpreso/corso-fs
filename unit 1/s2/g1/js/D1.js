@@ -30,8 +30,7 @@ console.log(myName)
 
 let a = 12
 let b = 20
-let c = a + b
-console.log(c)
+console.log(a + b)
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
@@ -47,10 +46,10 @@ console.log(x)
 
 myName = 'Sorpreso'
 console.log(myName)
-/* const mioNome2 = 'Rosa'
-console.log(mioNome2)
-mioNome2 = 'Sorpreso'
-console.log(mioNome2)
+/* const myName2 = 'Rosa'
+console.log(myName2)
+myName2 = 'Sorpreso'
+console.log(myName2)
 mi riporta l'errore: Assignment to constant variable
 */
 
