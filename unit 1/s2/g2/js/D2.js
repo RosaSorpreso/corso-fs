@@ -4,13 +4,15 @@
 
 {
 
-let a = 1
-let b = 2
+let a = 1;
+let b = 2;
 
 if(a > b){
-  console.log(a)
+  console.log(a);
+}else if(a < b){
+  console.log(b);
 }else{
-  console.log(b)
+  console.log('i numeri sono uguali');
 }
 
 }
@@ -20,10 +22,10 @@ if(a > b){
 
 {
 
-let a = 10
+let a = 10;
 
 if(a != 5){
-  console.log('not equal')
+  console.log('not equal');
 }
 
 }
@@ -34,10 +36,10 @@ if(a != 5){
 
 {
 
-let a = 15
+let a = 15;
 
 if(a % 5 == 0){
-  console.log('divisibile per 5')
+  console.log('divisibile per 5');
 }
 
 }
@@ -48,11 +50,11 @@ if(a % 5 == 0){
 
 {
 
-let a = 2
-let b = 8
+let a = 2;
+let b = 8;
 
-if(a == 8 || b == 8 || a + b == 8 || a - b == 8){
-  console.log('uguale a 8')
+if(a == 8 || b == 8 || a + b == 8 || a - b == 8 || b - a == 8){
+  console.log('uguale a 8');
 }
 
 }
@@ -65,12 +67,12 @@ if(a == 8 || b == 8 || a + b == 8 || a - b == 8){
 
 {
 
-let totalShoppingCart = 30
+let totalShoppingCart = 30;
 
 if(totalShoppingCart < 50){
-  totalShoppingCart += 10
+  totalShoppingCart += 10;
 }
-console.log(totalShoppingCart)
+console.log(totalShoppingCart);
 
 }
 
@@ -81,16 +83,16 @@ console.log(totalShoppingCart)
 
 {
 
-let totalShoppingCart = 30
-let discountPrice = totalShoppingCart / 100 * 20
-totalShoppingCart -= discountPrice
+let totalShoppingCart = 30;
+let discountPrice = totalShoppingCart / 100 * 20;
+totalShoppingCart -= discountPrice;
 
-console.log(totalShoppingCart)
+console.log(totalShoppingCart);
 
 if(totalShoppingCart < 50){
-  totalShoppingCart += 10
+  totalShoppingCart += 10;
 }
-console.log(totalShoppingCart)
+console.log(totalShoppingCart);
 
 }
 
@@ -102,22 +104,22 @@ console.log(totalShoppingCart)
 
 {
 
-let a = 3
-let b = 10
-let c = 7
+let a = 3;
+let b = 10;
+let c = 7;
 
 if(a > b && a > c && b > c){
-  console.log(a, b ,c)
+  console.log(a, b ,c);
 }else if(a > b && a > c && c > b){
-  console.log(a, c, b)
+  console.log(a, c, b);
 }else if(b > a && b > c && a > c){
-  console.log(b, a, c)
+  console.log(b, a, c);
 }else if(b > a && b > c && c >a){
-  console.log(b, c, a)
+  console.log(b, c, a);
 }else if(c > a && c > b && a > b){
-  console.log(c, a, b)
+  console.log(c, a, b);
 }else if(c > a && c > b && b > a){
-  console.log(c, b, a)
+  console.log(c, b, a);
 }
 
 }
@@ -128,12 +130,12 @@ if(a > b && a > c && b > c){
 
 {
 
-let num = '6'
+let num = '6';
 
 if(num == typeof(Number)){
-  console.log(true)
+  console.log('è un numero');
 }else{
-  console.log(false)
+  console.log('non è un numero');
 }
 
 }
@@ -144,12 +146,12 @@ if(num == typeof(Number)){
 
 {
 
-let a = 7
+let a = 7;
 
 if(a % 2 == 0){
-  console.log('pari')
+  console.log('pari');
 }else{
-  console.log('dispari')
+  console.log('dispari');
 }
 
 }
@@ -160,11 +162,11 @@ if(a % 2 == 0){
 
 {
 
-let val = 7
-if (val < 10 && val > 5) {
-    console.log("Meno di 10");
-  } else if (val < 5) {
+let val = 7;
+if (val < 5) {
     console.log("Meno di 5");
+  } else if (val < 10){
+    console.log("Meno di 10");
   } else {
     console.log("Uguale a 10 o maggiore");
   }
@@ -181,8 +183,8 @@ const me = {
   skills: ['javascript', 'html', 'css'],
 }
 
-me.city = 'Toronto'
-console.log(me.city)
+me.city = 'Toronto';
+console.log(me.city);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -190,30 +192,30 @@ console.log(me.city)
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-delete me.lastName
-console.log(me.lastName)
+delete me.lastName;
+console.log(me.lastName);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-me.skills.pop()
-console.log(me.skills)
+me.skills.pop();
+console.log(me.skills);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 
-let arr = []
-console.log(arr)
-arr.push(1,2,3,4,5,6,7,8,9,10)
-console.log(arr)
+let arr = [];
+console.log(arr);
+arr.push(1,2,3,4,5,6,7,8,9,10);
+console.log(arr);
 
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-arr.splice(arr.lastIndexOf(), 1, 100)
-console.log(arr)
+arr.splice(arr.lastIndexOf(), 1, 100);
+console.log(arr);
