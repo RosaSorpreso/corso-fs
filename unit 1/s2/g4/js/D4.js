@@ -28,12 +28,11 @@ console.log(crazySum(2,3))
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
 
-const b = 19
 function crazyDiff(a){
     if(a > 19){
-        return Math.abs(a - b) * 3
+        return Math.abs(a - 19) * 3
     }else{
-        return Math.abs(a - b)  
+        return Math.abs(a - 19)  
     }
 }
 console.log(crazyDiff(3))
@@ -45,9 +44,10 @@ console.log(crazyDiff(20))
 */
 
 function boundary(n){
-    if(n > 20 && n <100 || n === 400){
+    if(n > 20 && n <= 100 || n === 400){
         return true
     }
+    return false
 }
 console.log(boundary(30))
 console.log(boundary(400))
