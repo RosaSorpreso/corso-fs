@@ -120,7 +120,9 @@ console.log(cutString('ciao mi chiamo rosa'))
 
 function giveMeRandom(n){
     let arr = [];
-        arr.push(Math.floor(Math.random() * 11))
+    for(i = 0; i < n; i++){
+        arr.push(Math.floor(Math.random() * 11));
+    }
     return arr
 }
-console.log()
+console.log(giveMeRandom(3))
