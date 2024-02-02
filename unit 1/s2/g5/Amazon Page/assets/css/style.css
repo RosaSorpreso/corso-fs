@@ -17,7 +17,7 @@ header img {
 
 .blu-chiaro {
     background-color: #364759;
-    padding: 10px 30px ;
+    padding: 15px 30px ;
 }
 
 .menu-nav, #shop-GiftCards a {
@@ -74,14 +74,16 @@ main, footer {
 .main-box {
     padding: 20px;
     background-color: white;
+    text-align: left;
 }
 
 #text-left {
     text-align: left;
+    padding-bottom: 20px;
 }
 
-.display-inline, .box p {
-    display:inline
+.display-inline, .box p, .img-box {
+    display: inline;
 }
 
 .link {
@@ -89,16 +91,35 @@ main, footer {
     font-weight: bold;
     text-decoration: none;
     color: #4b868b;
+    padding-left: 20px;
 }
+
+.img-box img {
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: inset -1px 3px 8px 5px #afafaf73, 2px 5px 16px 0px #afafaf73;
+}
+
 
 .img-grande {
     margin-top: 30px;
+    width: 100%;
 }
+
 
 /* footer */
 
 footer a {
     color: #e9edee;
     font-size: 1rem;
-    padding-top: 20px;
+    font-weight: bold;
+    scroll-behavior: smooth;
+}
+
+footer img {
+    width: 150px;
+    padding: 60px;
 }
