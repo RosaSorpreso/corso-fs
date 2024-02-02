@@ -1,1 +1,104 @@
-/* Your styles here */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+/* header */
+
+.blu-scuro {
+    background-color: #222f3f;
+}
+
+header img {
+    width: 150px;
+    padding: 10px 30px;
+}
+
+.blu-chiaro {
+    background-color: #364759;
+    padding: 10px 30px ;
+}
+
+.menu-nav, #shop-GiftCards a {
+    padding-right: 20px;
+    color: #ebe7ed;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* main */ 
+
+main {
+    padding: 30px 30px;
+    background-color: #e9edee;
+}
+
+main, footer {
+    text-align: center;
+}
+
+#shop-GiftCards {
+    background-color: #f56600;
+    padding: 10px 10px;
+    margin-bottom: 30px;
+}
+
+#shop-GiftCards a {
+    padding-right: 0px;
+}
+
+#shop-GiftCards a, h1 {
+    text-transform: capitalize;
+}
+
+#background-img {
+    background-image: url(../images/bg-image.png);
+    background-size: contain;
+    font-weight: bold;
+    color: #ebe7ed;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+#background-img h1 {
+    font-size: 1.8rem;
+    padding-top: 20px;
+}
+
+#background-img p {
+    padding-top: 20px;
+    font-size: 1rem;
+}
+
+.main-box {
+    padding: 20px;
+    background-color: white;
+}
+
+#text-left {
+    text-align: left;
+}
+
+.display-inline, .box p {
+    display:inline
+}
+
+.link {
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #4b868b;
+}
+
+.img-grande {
+    margin-top: 30px;
+}
+
+/* footer */
+
+footer a {
+    color: #e9edee;
+    font-size: 1rem;
+    padding-top: 20px;
+}

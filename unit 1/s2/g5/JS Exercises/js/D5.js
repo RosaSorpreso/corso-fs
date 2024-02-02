@@ -27,7 +27,7 @@ console.log(pets)
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
 
-petsOrdinati.reverse()
+pets.reverse()
 for(i = 0; i < pets.length; i++){
   console.log(pets[i])
 }
@@ -120,10 +120,10 @@ const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ]
 
-let i = 0
-while(numericArray[i] !== 32){
-  console.log(numericArray[i])
-  i++
+let a = 0
+while(numericArray[a] !== 32){
+  console.log(numericArray[a])
+  a++
 }
 
 /* ESERCIZIO 10
@@ -136,11 +136,81 @@ charactersArray.push('a', 'b', 'c', 'e', 'f', 'h', 'i', 'l', 'm', 'o', 'p', 'q',
 charactersArray.sort()
 console.log(charactersArray);
 
-let arrayNumeri = []
+/*let arrayNumeri = []
 for(i = 0; i < charactersArray.length; i++){
   switch(charactersArray[i]){
     case charactersArray[i]:
       arrayNumeri.push(i + 1);
+  }
+}
+console.log(arrayNumeri)   metodo alternativo*/
+
+let arrayNumeri = []
+for(i = 0; i < charactersArray.length; i++){
+  switch(charactersArray[i]){
+    case 'a':
+      arrayNumeri.push(i + 1);
+      break;
+    case 'b':
+      arrayNumeri.push(i + 1);
+      break;
+    case 'c':
+      arrayNumeri.push(i + 1);
+      break;
+    case 'd':
+      arrayNumeri.push(i + 1);
+      break;
+    case 'e':
+      arrayNumeri.push(i + 1);
+      break;
+    case 'f':
+      arrayNumeri.push(i + 1);
+      break;
+    case 'g':
+      arrayNumeri.push(i + 1);
+      break;
+    case 'h':
+      arrayNumeri.push(i + 1);
+      break;
+    case 'i':
+      arrayNumeri.push(i + 1);
+      break;
+    case 'l':
+      arrayNumeri.push(i + 1);
+      break;
+    case 'm':
+      arrayNumeri.push(i + 1);
+      break;
+    case 'n':
+      arrayNumeri.push(i + 1);
+      break;
+    case 'o':
+      arrayNumeri.push(i + 1);
+      break;
+    case 'p':
+      arrayNumeri.push(i + 1);
+      break;
+    case 'q':
+      arrayNumeri.push(i + 1);
+      break;
+    case 'r':
+      arrayNumeri.push(i + 1);
+      break;
+    case 's':
+      arrayNumeri.push(i + 1);
+      break;
+    case 't':
+      arrayNumeri.push(i + 1);
+      break;
+    case 'u':
+      arrayNumeri.push(i + 1);
+      break;
+    case 'v':
+      arrayNumeri.push(i + 1);
+      break;
+    case 'z':
+      arrayNumeri.push(i + 1);
+      break;
   }
 }
 console.log(arrayNumeri)
