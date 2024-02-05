@@ -112,12 +112,13 @@
       /* ESERCIZIO 4
        Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
       */
-      /*let ancor = document.querySelectorAll('a: not (footer a)')
+      let ancor = document.querySelectorAll('a:not(footer a)')
       const changeUrls = function () {
         ancor.forEach(el => {
           el.href = 'https://www.google.com'
         })
       }
+      console.log(ancor)
       changeUrls()
 
       /* ESERCIZIO 5
@@ -168,7 +169,8 @@
         
       const makeItClickable = function () {
         titolo.addEventListener('click',function(){
-          titolo = titolo.slice(0, -1)
+        let newTitolo = titolo.innerText.slice(0,-1)
+        titolo.innerText = newTitolo
         })
       }
       makeItClickable()
@@ -177,7 +179,14 @@
        Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
       */
 
-      const revealFooterLink = function () {}
+      let footer = document.querySelector('footer')
+      const revealFooterLink = function () {
+        footer.addEventListener('click',function(){
+          let url = footer.querySelector('a').href
+          alert(url)
+        })
+      }
+      revealFooterLink()
 
       /* ESERCIZIO 11
        Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
