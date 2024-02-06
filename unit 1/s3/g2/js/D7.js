@@ -14,7 +14,7 @@ console.log(concatString('ciao','addio'));
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
 
-const creaArray =  function(){
+const creaArray = function(){
   let array = []
   for (let i = 0; i < 10; i++) {
     array.push((Math.floor(Math.random() * 101)))
@@ -27,32 +27,39 @@ console.log(array);
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
-
-let arrayFiltrato = array.filter(el => el % 2 === 0)
+let filtraPari = function(arr){
+  return arr.filter(el => el % 2 === 0)
+}
+let arrayFiltrato = filtraPari(array)
 console.log(arrayFiltrato)
 
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
-let somma = 0
-array.forEach(function(el) {
+let sommaNumeri = function(arr){
+  let somma = 0
+  arr.forEach(function(el) {
   somma += el
 });
-console.log(somma);
+  return somma
+}
+console.log(sommaNumeri(array));
 
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
-let totale = array.reduce((tot, corr) => tot + corr, 0)
-console.log(totale);
+let sommaNumeri2 = function(arr){
+  return arr.reduce((tot, corr) => tot + corr, 0)
+}
+console.log(sommaNumeri2(array));
 
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
 
-function incrementaArray(arr, n){
+let incrementaArray = function(arr, n){
   return arr.map(el => el += n)
 };
 console.log(incrementaArray(array, 4))
@@ -235,7 +242,9 @@ console.log(creaArrayTitoli(movies));
 */
 
 let creaArrayFilm2000 = function(arr){
-  
+  let array = arr.filter(function(el){
+
+  })
 }
 
 /* ESERCIZIO 13 (reduce)
