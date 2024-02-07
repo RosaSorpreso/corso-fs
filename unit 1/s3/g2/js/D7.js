@@ -82,7 +82,7 @@ console.log(creaArrayNumerico(stringhe));
 
 let creaArrayDispari = function(){
   let arrayDispari = []
-  for (i = 0; i < 98; i++) {
+  for (i = 0; i < 100; i++) {
     if(i % 2 !== 0){
       arrayDispari.push(i)
     }
@@ -218,6 +218,8 @@ const movies = [
 })
 } 
 console.log(trovaFilmVecchio())*/
+
+
 
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
