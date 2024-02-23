@@ -1,18 +1,26 @@
+/* layout desktop 1200px */
+
 /* impostazioni generali */
 body {
     font-family: "Roboto", sans-serif;
 }
 
-
 /* HEADER */
 
 .header {
-    background-color: #ffc017;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
-    gap: 100px;
+    gap: 415px;
     height: 50px;
+    padding-left: 17%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header, .stay-curious {
+    background-color: #ffc017;
     border-bottom: 0.8px solid #000;
 }
 
@@ -27,10 +35,13 @@ body {
 }
 
 .nav-bar a {
-    text-decoration: none;
     font-size: 0.6rem;
     font-weight: 300;
     color: #000;
+}
+
+.nav-bar a, .stay-curious a {
+    text-decoration: none;
 }
 
 .button {
@@ -39,9 +50,162 @@ body {
     border-radius: 30px;
 }
 
-.nav-bar a.button {
+.nav-bar a.button, .stay-curious a.button {
     color: #fff;
 }
 
 /* MAIN */
 
+/* section stay curious */
+
+.stay-curious {
+    height: 300px;
+    background-image: url(../imgs/svg/m.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    padding-left: 17%;
+}
+
+.stay-curious h1 {
+    font-size: 4.8rem;
+    font-family: "Spectral", serif;
+}
+
+.stay-curious p {
+    width: 300px;
+}
+
+.stay-curious a {
+    font-size: 0.8rem;
+    padding: 8px 30px;
+}
+
+/* section trending */
+
+.trending {
+    height: 200px;
+    border-bottom: 0.8px solid #f2f2f2;
+    padding: 30px 17% 30px;
+}
+
+.trending-on-medium, .profile-name, .members-only {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.7rem;
+    position: relative;
+}
+
+.position {
+    font-size: 1.5rem;
+    color: #f2f2f2;
+    font-weight: 700;
+}
+
+.icona-trending {
+    width: 20px;
+}
+
+.article-trend-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article-trend, .topic {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.informations {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.profile-picture {
+    border-radius: 100%;
+    width: 15px;
+}
+
+.trending-on-medium p, .informations h3 {
+    text-transform: capitalize;
+}
+
+.profile-name p, .informations p, .type {
+    font-size: 0.55rem;
+}
+
+.informations h3 {
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+h3 ~ p, .members-only p, span, .type {
+    color: #6b6b6b;
+}
+
+.star {
+    width: 10px;
+}
+
+/* section articles */
+
+.container {
+    padding-left: 17%;
+}
+
+
+.article {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.article h3 {
+    font-size: 0.9rem;
+}
+
+.article .description-article {
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.type {
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    padding: 4px 6px;
+}
+
+.img-article {
+    width: 150px;
+    height: 90px;
+    margin-top: 10px;
+}
+
+.bookmark {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 15px;
+}
+
+/* aside */
+
+.aside-container {
+    width: 30%;
+}
