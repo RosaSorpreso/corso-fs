@@ -19,7 +19,7 @@ body {
     z-index: 10;
 }
 
-.header, .stay-curious {
+.header, .stay-curious-container {
     background-color: #ffc017;
     border-bottom: 0.8px solid #000;
 }
@@ -40,7 +40,7 @@ body {
     color: #000;
 }
 
-.nav-bar a, .stay-curious a, .type, .tag-footer, .see-more {
+.nav-bar a, .stay-curious-container a, .type, .tag-footer, .see-more {
     text-decoration: none;
 }
 
@@ -50,27 +50,43 @@ body {
     border-radius: 30px;
 }
 
-.nav-bar a.button, .stay-curious a.button {
+.nav-bar a.button, .stay-curious-container a.button {
     color: #fff;
 }
+
+/* animazione header */
+
+.header, #get-started {
+    transition: background-color 0.5s ease;
+}
+
+.white-background {
+    background-color: #fff;
+}
+
+.green-background {
+    background-color: #1a8917;
+}
+
 
 /* MAIN */
 
 /* section stay curious */
 
-.stay-curious {
+.stay-curious-container {
     height: 300px;
-    background-image: url(../imgs/svg/m.svg);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
+    padding-left: 17%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stay-curious {
     display: flex;
     flex-direction: column;
     gap: 15px;
     justify-content: center;
     align-content: center;
     align-items: flex-start;
-    padding-left: 17%;
 }
 
 .stay-curious h1 {
@@ -325,4 +341,10 @@ h3, .description-article, .img-article {
     padding-top: 20px;
     border-top: 0.8px solid #f2f2f2;
     width: 90%;
+}
+
+/* classe per animazione M */
+
+.hide {
+    display: none;
 }
