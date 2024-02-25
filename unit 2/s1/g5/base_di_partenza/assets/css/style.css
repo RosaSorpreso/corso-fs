@@ -246,13 +246,13 @@ h3, .description-article, .img-article {
     position: relative;
 }
 
-.tooltip-bookmark, .tooltip-star, .tooltip-star-trending {
+.tooltip-bookmark, .tooltip-star {
     display: none;
 }
 
 /* tooltip bookmark */
 
-.tooltip-wrap:hover .tooltip-bookmark, .tooltip-wrap:hover .tooltip-star, .tooltip-wrap:hover .tooltip-star-trending {
+.tooltip-wrap:hover .tooltip-bookmark, .tooltip-wrap:hover .tooltip-star {
     display: block;
     position: absolute;
     top: -160%;
