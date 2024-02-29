@@ -11844,5 +11844,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.img-hero {
+  width: 400px;
+}
 
 /*# sourceMappingURL=style.css.map */
