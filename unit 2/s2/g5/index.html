@@ -4,48 +4,190 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css">
     <title>Document</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Expand at md</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarsExample04">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form role="search">
-              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-            </form>
-          </div>
+<body class="bg-black">
+    <!-- navbar -->
+    <header class="px-4">
+        <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Fourth navbar example">
+            <div class="container-fluid">
+                <img src="./assets/img/netflix_logo.png" class="logo pe-3">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarsExample04">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link fs-6" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6" href="#">Tv Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6" aria-current="page" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6" aria-current="page" href="#">Recently Added</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-6" aria-current="page" href="#">My List</a>
+                        </li>
+                    </ul>
+                    <i class="bi bi-search fs-6 text-primary pe-3"></i>
+                    <img class="profile me-3" src="./assets/img/kids_icon.png">
+                    <i class="bi bi-bell-fill fs-6 text-primary pe-3"></i>
+                    <div class="dropdown">
+                        <a class="btn p-0 mt-2 mt-lg-0 mb-lg-1 dropdown-toggle text-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="profile" src="./assets/img/avatar.png">
+                        </a>
+                        <ul class="dropdown-menu me-5">
+                            <li><a class="dropdown-item fs-6" href="#">Action</a></li>
+                            <li><a class="dropdown-item fs-6" href="#">Another action</a></li>
+                            <li><a class="dropdown-item fs-6" href="./edit-profile.html">Edit Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--tv shows-->
+    <div class="px-4 py-2">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-4">
+                <h2 class="text-primary fs-3 mb-0">Tv Shows</h2>
+                <select class="form-select-sm p-1 bg-black text-primary select fs-6" aria-label="Default select example">
+                    <option selected>Generes</option>
+                </select>
+            </div>
+            <div class="d-flex">
+                <i class="bi bi-list text-secondary border border-secondary px-2 fs-6 d-none d-sm-block"></i>
+                <i class="bi bi-grid-fill text-secondary border border-secondary px-2 fs-6 d-none d-sm-block"></i>
+            </div>
         </div>
-      </nav>
-
-
-
-
-
-
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map"></script>
+    </div>
+    <!--film-->
+    <div class="px-4">
+        <div class="container-fluid">
+            <div class="py-3">
+                <h2 class="text-primary fs-5">Trending Now</h2>
+                <section class="splide" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><img class="img-carosel" src="./assets/img/media/media0.webp"></li>
+                            <li class="splide__slide"><img class="img-carosel" src="./assets/img/media/media1.jpg"></li>
+                            <li class="splide__slide"><img class="img-carosel" src="./assets/img/media/media2.webp"></li>
+                            <li class="splide__slide"><img class="img-carosel" src="./assets/img/media/media3.webp"></li>
+                            <li class="splide__slide"><img class="img-carosel" src="./assets/img/media/media4.jpg"></li>
+                            <li class="splide__slide"><img class="img-carosel" src="./assets/img/media/media5.webp"></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="py-3">
+                <h2 class="text-primary fs-5">Watch It Again</h2>
+                <section class="splide" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><img class="img-carosel" src="./assets/img/media/media6.jpg"></li>
+                            <li class="splide__slide"><img class="img-carosel" src="./assets/img/media/media7.webp"></li>
+                            <li class="splide__slide"><img class="img-carosel" src="./assets/img/media/media8.webp"></li>
+                            <li class="splide__slide"><img class="img-carosel" src="./assets/img/media/media9.jpg"></li>
+                            <li class="splide__slide"><img class="img-carosel" src="./assets/img/media/media10.jpg"></li>
+                            <li class="splide__slide"><img class="img-carosel" src="./assets/img/media/media11.jpg"></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="py-3">
+                <h2 class="text-primary fs-5">New Releases</h2>
+                <section class="splide" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><img class="img-carosel" src="./assets/img/media/media12.jpg"></li>
+                            <li class="splide__slide"><img class="img-carosel" src="./assets/img/media/media13.jpg"></li>
+                            <li class="splide__slide"><img class="img-carosel" src="./assets/img/media/media14.webp"></li>
+                            <li class="splide__slide"><img class="img-carosel" src="./assets/img/media/media15.jpg"></li>
+                            <li class="splide__slide"><img class="img-carosel" src="./assets/img/media/media16.webp"></li>
+                            <li class="splide__slide"><img class="img-carosel" src="./assets/img/media/media17.jpg"></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            
+        </div>
+    </div>
+    <!--footer-->
+    <footer class="container">
+        <div class="py-5 my-5">
+            <div class="d-flex gap-3 pb-3">
+                <a class="nav-link" href="#"> <i class="bi bi-facebook text-secondary fs-4"></i>  </a> 
+                <a class="nav-link" href="#"> <i class="bi bi-instagram text-secondary fs-4"></i> </a>
+                <a class="nav-link" href="#"> <i class="bi bi-twitter text-secondary fs-4"></i> </a>
+                <a class="nav-link" href="#"> <i class="bi bi-youtube text-secondary fs-4"></i> </a>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
+                <div class="col mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-6">Audio and Subtitles</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-6">Media Center</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-6">Privacy</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-6">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-6">Audio Description</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-6">Investor Relations</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-6">Legal Notices</a></li>
+                    </ul>
+                </div>
+                <div class="col mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-6">Help center</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-6">Jobs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-6">Cookie Preferences</a></li>
+                    </ul>
+                </div>
+                <div class="col mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-6">Gift Cards</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-6">Terms of Use</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary fs-6">Corporate Information</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-secondary service fs-6">Service Code</button>
+        </div>
+    </footer>
+    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script>
+        var elms = document.getElementsByClassName( 'splide' );
+        for ( var i = 0; i < elms.length; i++ ) {
+            new Splide( elms[ i ], {
+            type   : 'loop',
+            perPage: 6,
+            gap    : '2rem',
+            breakpoints: {
+                768: {
+                type   : 'loop',
+                perPage: 3,
+                gap    : '.7rem',
+                height : '6rem',
+                },
+                480: {
+                type   : 'loop',
+                perPage: 1,
+                gap    : '.7rem',
+                height : '6rem',
+                },
+            },
+            } ).mount();
+            }
+    </script>
 </body>
 </html>
