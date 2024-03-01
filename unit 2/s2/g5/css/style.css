@@ -11852,7 +11852,7 @@ textarea.form-control-lg {
   width: 25px;
 }
 
-.service, .select {
+.border-radius-none, .select {
   border-radius: 0;
 }
 
@@ -11879,12 +11879,21 @@ textarea.form-control-lg {
   width: 100px;
 }
 
-.maturity-settings {
-  width: 160px;
+.fit-content, .buttons, .div-margin {
+  width: fit-content;
 }
 
-.div-padding {
-  padding-left: 120px;
+.div-margin {
+  margin-left: 0;
+}
+@media screen and (min-width: 768px) {
+  .div-margin {
+    margin-left: 120px;
+  }
+}
+
+.buttons {
+  letter-spacing: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */
