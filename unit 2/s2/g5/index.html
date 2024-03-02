@@ -10,7 +10,7 @@
 </head>
 <body class="bg-black">
     <!-- navbar -->
-    <header class="px-4">
+    <header class="px-4 sticky-top bg-black">
         <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Fourth navbar example">
             <div class="container-fluid">
                 <img src="./assets/img/netflix_logo.png" class="logo pe-3">
@@ -166,8 +166,8 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <script>
-        var elms = document.getElementsByClassName( 'splide' );
-        for ( var i = 0; i < elms.length; i++ ) {
+        const elms = document.getElementsByClassName( 'splide' );
+        for ( let i = 0; i < elms.length; i++ ) {
             new Splide( elms[ i ], {
             type   : 'loop',
             perPage: 6,
