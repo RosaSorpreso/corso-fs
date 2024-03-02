@@ -1,5 +1,8 @@
 $h6-font-size: 0.7rem;
 $primary: white;
+$secondary: #666666;
+$dark: #141414;
+$body-bg: $dark;
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 .logo {
@@ -38,6 +41,10 @@ $primary: white;
     @media screen and (min-width: 768px) {
         margin-left: 120px;
     }
+}
+
+.dark-gray {
+    background-color: #333333;
 }
 
 .buttons {
