@@ -1,0 +1,42 @@
+.logo {
+    width: 100px;
+}
+
+.profile {
+    width: 25px;
+}
+
+.btn:first-child:active, .btn.show {
+    border: none;
+}
+
+.dropdown-item:active{
+    background-color: #ffffff26;
+}
+
+.select {
+    width: 100px;
+    height: 25px;
+}
+
+.img-carosel {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    @media screen and (min-width: 769px){
+        width: 120%;
+    }
+    @media screen and (min-width: 1200px){
+        width: 110%;
+    }
+}
+
+.splide__slide{
+    transform: scale(1);
+    transition-duration: 0.4s;
+    &:hover{
+        transform: scale(0.85);
+        transition-duration: 0.4s;
+    }
+}

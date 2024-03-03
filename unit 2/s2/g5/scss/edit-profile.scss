@@ -1,0 +1,38 @@
+.edit-profile {
+    width: 100px;
+}
+
+.div-margin{
+    margin-left: 0;
+    @media screen and (min-width: 768px) {
+        margin-left: 120px;
+    }
+}
+
+.dark-gray {
+    background-color: #333333;
+}
+
+.btn-check:checked + .btn{
+    @extend .dark-gray;
+    border-color: #333333;
+}
+
+.buttons {
+    @extend .fit-content;
+    letter-spacing: 2px;
+}
+
+.form-check-input[type=checkbox]{
+    border-radius: 0;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 0.5px solid gray;
+    &:focus {
+        box-shadow: none;
+    }
+    &:checked {
+        opacity: 0.7;
+    }
+}

@@ -1,0 +1,27 @@
+@import 'homepage';
+
+.light-gray {
+    color: #b7b7b7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    @media screen and (min-width: 1024px) {
+        width: 80%;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 70%;
+    }
+}
+
+.btn-personal {
+    background-image: linear-gradient(-180deg, #ededed, #dddddd);
+    border: none;
+    &:active {
+        background-image: linear-gradient( #bfbfbf, #dddddd);
+    }
+}

@@ -1,3 +1,4 @@
+$h1-font-size: 3rem;
 $h6-font-size: 0.7rem;
 $primary: white;
 $secondary: #666666;
@@ -5,63 +6,10 @@ $dark: #141414;
 $body-bg: $dark;
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-.logo {
-    width: 100px;
-}
-
-.profile {
-    width: 25px;
-}
-
-.select {
-    width: 100px;
-    height: 25px;
-}
-
-.img-carosel {
-    width: 100%;
-    @media screen and (min-width: 769px){
-        width: 120%;
-    }
-    @media screen and (min-width: 1200px){
-        width: 110%;
-    }
-}
-
-.edit-profile {
-    width: 100px;
-}
-
 .fit-content {
     width: fit-content;
 }
 
-.div-margin{
-    margin-left: 0;
-    @media screen and (min-width: 768px) {
-        margin-left: 120px;
-    }
-}
-
-.dark-gray {
-    background-color: #333333;
-}
-
-.buttons {
-    @extend .fit-content;
-    letter-spacing: 2px;
-}
-
-.form-check-input[type=checkbox]{
-    border-radius: 0;
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    border: 0.5px solid gray;
-    &:focus {
-        box-shadow: none;
-    }
-    &:checked {
-        opacity: 0.7;
-    }
-}
+@import 'homepage';
+@import 'edit-profile';
+@import 'settings';
