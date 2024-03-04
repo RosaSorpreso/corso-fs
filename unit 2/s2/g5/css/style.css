@@ -11989,16 +11989,16 @@ a {
   text-decoration: none;
 }
 
-.container {
+.personal-width {
   width: 100%;
 }
 @media screen and (min-width: 1024px) {
-  .container {
+  .personal-width {
     width: 80%;
   }
 }
 @media screen and (min-width: 1440px) {
-  .container {
+  .personal-width {
     width: 70%;
   }
 }
