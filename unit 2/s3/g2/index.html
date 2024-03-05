@@ -35,13 +35,19 @@
         saveBtn.onclick = () => {
             let user = inputField.value
             localStorage.setItem('name', user);
-            showUser();
+            if(user){
+                showUser();
+            }
             inputField.value = ''
         }
 
         deleteBtn.onclick = () => {
-            localStorage.removeItem('name')
-            showUser()
+            let user = inputField.value
+            if(user){
+                localStorage.removeItem('name')
+                showUser()
+            }
+            inputField.value = ''
         }
 
         //esercizio 2
