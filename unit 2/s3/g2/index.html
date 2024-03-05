@@ -6,7 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    
+
+    <p id="timer"></p>
+
     <form>
         <input type="text" placeholder="Name" id="input">
         <button type="button" id="save-btn">Save</button>
@@ -46,6 +48,16 @@
                 localStorage.removeItem('name', user)
             }
         }
+
+        //timer 
+
+        let timer = document.querySelector('#timer')
+        let seconds = sessionStorage.getItem('timer')
+
+        let interval = setInterval(() => {
+            timer.innerText = seconds++
+            sessionStorage.setItem('timer', timer.innerText)
+        },1000)
 
     </script>
 </body>
