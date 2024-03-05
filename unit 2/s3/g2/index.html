@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <input type="text" placeholder="Name" id="input">
+        <button type="button" id="save-btn">Save</button>
+        <button type="button" id="delete-btn">Delete</button>
+    </form>
+    <ul id="user-list"></ul>
+
+    <script>
+        let userList = document.querySelector('#user-list');
+        let inputField = document.querySelector('#input');
+        let saveBtn = document.querySelector('#save-btn');
+        let deleteBtn = document.querySelector('#delete-btn');
+        let users = [];
+
+        const createList = () => {
+            userList.innerHTML = ''
+            users.forEach((user) => {
+                let newLi = document.createElement('li')
+                newLi.innerText = 'name: ' + user;
+                userList.appendChild(newLi);
+            })
+        }
+
+        saveBtn.onclick = () => {
+            let user = inputField.value;
+            users.push(user);
+            createList();
+            if(user){
+                localStorage.setItem('name', user);
+            }
+            inputField.value = ''
+        }
+
+        deleteBtn.onclick = () => {
+            let user = inputField.value;
+            if(user){
+                localStorage.removeItem('name', user)
+            }
+        }
+
+    </script>
+</body>
+</html>
