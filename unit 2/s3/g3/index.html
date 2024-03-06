@@ -8,13 +8,32 @@
 </head>
 <body>
     
+    <div class="container d-flex justify-content-end my-3">
+        <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+            Cart
+        </button>
+        <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="staticBackdropLabel">Your Products</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <ul id="cart-list">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="row" id="div-row">
 
         </div>
     </div>
 
-
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
 
         fetch('https://striveschool-api.herokuapp.com/books')
@@ -59,14 +78,38 @@
                 category.innerText = `Category: ${el.category}`
                 body.append(category)
 
-                //button
+                //button to remove col
                 let deleteBtn = document.createElement('button')
                 deleteBtn.classList.add('btn', 'btn-primary')
-                deleteBtn.innerText = 'Scarta'
+                deleteBtn.innerText = 'Remove'
                 body.append(deleteBtn)
 
+                //button to add product to cart
+                let addBtn = document.createElement('button')
+                addBtn.classList.add('btn', 'btn-success', 'mx-1')
+                addBtn.innerText = 'Buy'
+                body.append(addBtn)
+
+                // function to remove col
                 deleteBtn.addEventListener('click', () => col.remove())
 
+                //function to add product to cart
+                addBtn.addEventListener('click', () => {
+                    let cart = document.querySelector('#cart-list')
+                    let product = document.createElement('li')
+                    product.innerText = `${el.title}, ${el.price}$`
+                    cart.append(product)
+                    localStorage.setItem('product', el.title)
+                    let removeBtn = document.createElement('button')
+                    removeBtn.classList.add('btn', 'btn-secondary', 'mx-1')
+                    removeBtn.innerText = 'Remove'
+                    product.append(removeBtn)
+                    //function to remove product in the cart
+                    removeBtn.addEventListener('click', () => {
+                        product.remove()
+                        localStorage.removeItem('product')
+                    })
+                })
             });
         })
 
