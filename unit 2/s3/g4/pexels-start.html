@@ -136,7 +136,7 @@
           </p>
           <p>
             <a href="#" class="btn btn-primary my-2" id="loadBtn">Load Images</a>
-            <a href="#" class="btn btn-secondary my-2">Load Secondary Images</a>
+            <a href="#" class="btn btn-secondary my-2" id="loadBtn2">Load Secondary Images</a>
           </p>
         </div>
       </section>
@@ -489,15 +489,20 @@
             }).then(dati => dati.json())
       }
 
-      let loadBtn = document.querySelector('#loadBtn')
-      loadBtn.addEventListener('click', () => {
-        chiamata('puppies').then(dati => {
+      function assegnaFoto(query){
+        chiamata(query).then(dati => {
           let img = document.querySelectorAll('.card-img-top')
           dati.photos.forEach((photo, index) => {
             img[index].src = photo.src.medium
           });
         })
-      })
+      }
+
+      let loadBtn = document.querySelector('#loadBtn')
+      loadBtn.addEventListener('click', () => assegnaFoto('puppies'))
+
+      let loadSecondBtn = document.querySelector('#loadBtn2')
+      loadSecondBtn.addEventListener('click', () => assegnaFoto('america'))
 
     </script>
   </body>
