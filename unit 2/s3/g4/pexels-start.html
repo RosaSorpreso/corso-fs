@@ -486,16 +486,17 @@
                 headers: {
                     Authorization: apyKey
                 }
-            }).then(dati => dati.json()).then(dati => dati.photos.forEach(photo => {
-              let imgBox = document.querySelector('img')
-              imgBox.src = photo.url
-            }))
-
+            }).then(dati => dati.json())
       }
 
       let loadBtn = document.querySelector('#loadBtn')
       loadBtn.addEventListener('click', () => {
-        chiamata('puppies')
+        chiamata('puppies').then(dati => {
+          let img = document.querySelectorAll('.card-img-top')
+          dati.photos.forEach((photo, index) => {
+            img[index].src = photo.src.medium
+          });
+        })
       })
 
     </script>
