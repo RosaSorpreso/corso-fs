@@ -1,6 +1,5 @@
 let url = new URLSearchParams(location.search)
 let id = url.get('id')
-console.log(id)
 
 fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`, {
     method:'GET',
@@ -53,4 +52,19 @@ saveBtn.addEventListener('click', () => {
             .then(res => {
                 location.href = 'index.html'
             })
-}) 
+})
+
+let deleteBtn = document.querySelector('#delete-btn')
+deleteBtn.addEventListener('click', () => {
+    fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`,{
+                method:'DELETE',
+                headers:{
+                    'Content-type':'application/json',
+                    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZTcyMTJkN2IxMTAwMTkwZTZmMTQiLCJpYXQiOjE3MDk4OTM0MDksImV4cCI6MTcxMTEwMzAwOX0.HZkeQ2N6C9nMLUq1ZoUdGC9k-Za4JnzyHVzNQGXD0Pw"
+                }
+            })
+            .then(res => res.json())
+            .then(phoneDeleted => {
+                location.href = 'index.html'
+            })
+})
