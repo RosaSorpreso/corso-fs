@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid d-flex">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="back-office.html">Add New Item</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="border-bottom py-2">Products</h1>
+        <div class="row">
+            <template id="card-template">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img id="img" src="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 id="name" class="card-title">Card title</h5>
+                            <p id="price" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Info</a>
+                            <a href="#" id="edit-btn" class="btn btn-warning">Edit</a>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+
+    <script src="./js/homepage.js"></script>
+
+</body>
+</html>

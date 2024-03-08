@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Amazon | Back Office</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid d-flex">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <form>
+            <input id="name" type="text" class="form-control" placeholder="Product Name" required>
+            <input id="brand" type="text" class="form-control" placeholder="Product Brand" required>
+            <div class="input-group">
+                <input id="price" type="text" class="form-control" placeholder="Product Price" required>
+                <span class="input-group-text">€</span>
+            </div>
+            <input id="img-url" type="text" class="form-control" placeholder="Image Url" required>
+            <textarea id="description" class="form-control" placeholder="Write Description"></textarea>
+            <button id="save-btn" class="btn btn-warning" type="button">Save</button>
+        </form>
+    </div>
+
+    <script src="./js/back-office.js"></script>
+
+</body>
+</html>
