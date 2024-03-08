@@ -14,10 +14,12 @@ fetch('https://striveschool-api.herokuapp.com/api/product/', {
         let img = card.querySelector('#img')
         let name = card.querySelector('#name')
         let price = card.querySelector('#price')
+        let editBtn = card.querySelector('#edit-btn')
 
         img.src = phone.imageUrl
         name.innerText = phone.name
         price.innerText = phone.price
+        editBtn.href = `edit-product.html?id=${phone._id}`
 
         document.querySelector('.row').append(card)
     };

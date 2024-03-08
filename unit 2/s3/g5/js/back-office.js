@@ -13,7 +13,6 @@ saveBtn.addEventListener('click', () => {
         brand,
         imageUrl,
         price
-        
     }
 
     fetch('https://striveschool-api.herokuapp.com/api/product/',{
