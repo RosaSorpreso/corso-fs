@@ -19,7 +19,7 @@ fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`, {
     name.value = phone.name
     brand.value = phone.brand
     price.value = phone.price
-    imageUrl = phone.imageUrl
+    imageUrl.value = phone.imageUrl
     description.value = phone.description
 })
 
