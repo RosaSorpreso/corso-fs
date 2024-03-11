@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <title>Amazon | Edit Product</title>
 </head>
 <body>
@@ -12,29 +13,55 @@
         <nav class="navbar bg-dark">
             <div class="container ">
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/img/Amazon_logo.png" alt="Immagine test" width="150" height="35">
+                    <img src="./assets/img/Amazon_logo.png" alt="Immagine test" width="130" height="35">
                 </a>
-            <a class="text-white" href="index.html">Home</a>
+            <a class="text-white nav-link" href="index.html">Home</a>
             </div>
         </nav>
     </header>
 
-    <div class="container">
+    <div class="container mt-5">
+        <h1 class="border-bottom py-2 mb-3">Edit Product</h1>
         <form>
-            <input id="name" type="text" class="form-control" placeholder="Product Name" required>
-            <input id="brand" type="text" class="form-control" placeholder="Product Brand" required>
+            <input id="name" type="text" class="form-control mb-3" placeholder="Product Name" required>
+            <input id="brand" type="text" class="form-control mb-3" placeholder="Product Brand" required>
             <div class="input-group">
-                <input id="price" type="text" class="form-control" placeholder="Product Price" required>
-                <span class="input-group-text">€</span>
+                <input id="price" type="text" class="form-control mb-3" placeholder="Product Price" required>
+                <span class="input-group-text mb-3">€</span>
             </div>
-            <input id="img-url" type="text" class="form-control" placeholder="Image Url" required>
-            <textarea id="description" class="form-control" placeholder="Write Description"></textarea>
-            <button id="save-btn" class="btn btn-warning" type="button">Save</button>
-            <input id="reset-btn" class="btn btn-secondary" type="reset" value="Reset"></input>
-            <button id="delete-btn" class="btn btn-danger" type="button">Delete</button>
+            <input id="img-url" type="text" class="form-control mb-3" placeholder="Image Url" required>
+            <textarea id="description" class="form-control mb-3" placeholder="Write Description"></textarea>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <button id="save-btn" class="btn btn-warning" type="button">Save</button>
+                    <button id="reset-btn" class="btn btn-outline-secondary" type="reset">Reset</button>
+                </div>
+                <button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <i class="bi bi-trash"></i> Delete
+                </button>
+            </div>
         </form>
     </div>
 
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Deleting Product</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Undone</button>
+                    <button type="button" class="btn btn-danger" id="delete-btn">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="./assets/js/edit-product.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

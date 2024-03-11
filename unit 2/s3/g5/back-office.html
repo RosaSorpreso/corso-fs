@@ -12,29 +12,31 @@
         <nav class="navbar bg-dark">
             <div class="container ">
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/img/Amazon_logo.png" alt="Immagine test" width="150" height="35">
+                    <img src="./assets/img/Amazon_logo.png" alt="Immagine test" width="130" height="35">
                 </a>
-            <a class="text-white" href="index.html">Home</a>
+            <a class="text-white nav-link" href="index.html">Home</a>
             </div>
         </nav>
     </header>
 
-    <div class="container">
+    <div class="container mt-5">
+        <h1 class="border-bottom py-2 mb-3">Create New Product</h1>
         <form>
-            <input id="name" type="text" class="form-control" placeholder="Product Name" required>
-            <input id="brand" type="text" class="form-control" placeholder="Product Brand" required>
+            <input id="name" type="text" class="form-control mb-3" placeholder="Product Name" required>
+            <input id="brand" type="text" class="form-control mb-3" placeholder="Product Brand" required>
             <div class="input-group">
-                <input id="price" type="text" class="form-control" placeholder="Product Price" required>
-                <span class="input-group-text">€</span>
+                <input id="price" type="text" class="form-control mb-3" placeholder="Product Price" required>
+                <span class="input-group-text mb-3">€</span>
             </div>
-            <input id="img-url" type="text" class="form-control" placeholder="Image Url" required>
-            <textarea id="description" class="form-control" placeholder="Write Description"></textarea>
+            <input id="img-url" type="text" class="form-control mb-3" placeholder="Image Url" required>
+            <textarea id="description" class="form-control mb-3" placeholder="Write Description"></textarea>
             <button id="save-btn" class="btn btn-warning" type="button">Save</button>
-            <input id="reset-btn" class="btn btn-secondary" type="reset" value="Reset"></input>
+            <input id="reset-btn" class="btn btn-outline-secondary" type="reset" value="Reset"></input>
         </form>
     </div>
 
     <script src="./assets/js/back-office.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

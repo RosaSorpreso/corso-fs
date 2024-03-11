@@ -4,34 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Amazon | Homepage</title>
 </head>
 <body>
     
     <header>
         <nav class="navbar bg-dark">
-            <div class="container ">
+            <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/img/Amazon_logo.png" alt="Immagine test" width="150" height="35">
+                    <img src="./assets/img/Amazon_logo.png" alt="Immagine test" width="130" height="35">
                 </a>
-            <a class="text-white" href="back-office.html">Add New Product</a>
+                <a class="text-white nav-link" href="back-office.html">Add New Product</a>
             </div>
         </nav>
     </header>
 
 
-    <div class="container">
-        <h1 class="border-bottom py-2">Products</h1>
+    <div class="container my-5">
+        <h1 class="border-bottom py-2 mb-0">Products</h1>
         <div class="row">
             <template id="card-template">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card" style="width: 18rem;">
-                        <img id="img" src="" class="card-img-top">
+                    <div class="card mt-3">
+                        <img id="img" src="" class="card-img-top heigth">
                         <div class="card-body">
-                            <h5 id="name" class="card-title"></h5>
-                            <p id="price" class="card-text"></p>
-                            <a href="#" class="btn btn-primary">Info</a>
-                            <a href="" id="edit-btn" class="btn btn-warning">Edit</a>
+                            <h5 id="name" class="card-title mb-3"></h5>
+                            <p id="price" class="card-text bg-dark text-warning fit-content price"></p>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <a href="" id="edit-btn" class="btn btn-warning">Edit</a>
+                                <a href="#" id="info-btn" class="btn btn-secondary h-50 info"><i class="bi bi-info-circle"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -40,6 +44,7 @@
     </div>
 
     <script src="./assets/js/homepage.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
