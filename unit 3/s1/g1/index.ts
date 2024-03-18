@@ -3,11 +3,6 @@ interface Smartphone {
     numeroChiamate:number
     minutiTotali:number
 
-    ricarica(ammontare:number):void
-    chiamata(minutiDurata:number):void
-    get numero404():number
-    get getNumeroChiamate():number
-    azzeraChiamate():void
 }
 
 class User implements Smartphone {
