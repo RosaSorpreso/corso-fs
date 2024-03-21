@@ -1,7 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './pages/home/home.component';
+import { ActiveComponent } from './pages/active/active.component';
+import { NonActiveComponent } from './pages/non-active/non-active.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'active',
+    component: ActiveComponent
+  },
+  {
+    path:'non-active',
+    component: NonActiveComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
