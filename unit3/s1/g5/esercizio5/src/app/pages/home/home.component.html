@@ -1,11 +1,12 @@
-<p>home works!</p>
+<h2 class="text-center border-bottom pb-2 mb-4 fs-1">Auto in Evidenza questa settimana</h2>
 
-
-<div [ngClass]="{'bg-success': car.available, 'bg-danger': !car.available}"
-      class="card" *ngFor="let car of inEvidenceCars">
-  <img [src]="car.modelImage" class="card-img-top">
-  <div class="card-body">
-    <h5 class="card-title">{{car.model}}</h5>
-    <p class="card-text">{{car.brand}}</p>
+<div class="d-flex flex-wrap gap-5 justify-content-center">
+  <div [ngClass]="{'bg-success': car.available, 'bg-danger': !car.available}"
+  class="card home-width" *ngFor="let car of inEvidenceCars">
+    <img [src]="car.modelImage" class="card-img-top img-car-home">
+    <div class="card-body">
+      <h5 class="card-title text-white">{{car.model}}</h5>
+      <a routerLink="/{{car.brand}}" class="btn btn-outline-light card-text">{{car.brand}}</a>
+    </div>
   </div>
 </div>

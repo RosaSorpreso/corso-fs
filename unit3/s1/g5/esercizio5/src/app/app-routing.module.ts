@@ -12,15 +12,15 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'ford',
+    path: 'Ford',
     component: FordComponent
   },
   {
-    path: 'fiat',
+    path: 'Fiat',
     component: FiatComponent
   },
   {
-    path: 'audi',
+    path: 'Audi',
     component: AudiComponent
   },
   {

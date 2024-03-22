@@ -1,10 +1,12 @@
-<p>audi works!</p>
+<h2 class="text-center border-bottom pb-2 mb-4 fs-1">{{audiCars[0].brand}} Models</h2>
 
-<div [ngClass]="{'bg-success': car.available, 'bg-danger': !car.available}"
-      class="card" *ngFor="let car of audiCars">
-  <img [src]="car.modelImage" class="card-img-top">
-  <div class="card-body">
-    <h5 class="card-title">{{car.model}}</h5>
-    <p class="card-text">{{car.brand}}</p>
+<div class="d-flex flex-wrap justify-content-center gap-5">
+  <div [ngClass]="{'bg-success': car.available, 'bg-danger': !car.available}"
+  class="card personal-width" *ngFor="let car of audiCars">
+    <img [src]="car.modelImage" class="card-img-top img-car">
+    <div class="card-body">
+      <h5 class="card-title text-white">{{car.model}}</h5>
+      <p class="card-text text-white">{{car.brand}}</p>
+    </div>
   </div>
 </div>

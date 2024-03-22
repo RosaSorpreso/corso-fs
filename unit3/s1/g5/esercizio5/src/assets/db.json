@@ -3,16 +3,16 @@
         "brand": "Fiat",
         "brandLogo": "https://picsum.photos/100/100?random=7",
         "model": "500L",
-        "modelImage": "https://picsum.photos/200/300?random=1",
+        "modelImage": "https://cdn.motor1.com/images/mgl/7WB6W/s1/copertina-fiat-500l-restyling-la-familiare-e-piu-cross-e-tecnologica.jpg",
         "year": 2015,
         "price": 7500,
         "available": false
     },
     {
         "brand": "Fiat",
-        "brandLogo": "https://picsum.photos/100/100?random=7",
+        "brandLogo": "https://picsum.photos/100/100?random=8",
         "model": "500 Abarth",
-        "modelImage": "https://picsum.photos/200/300?random=2",
+        "modelImage": "https://www.autoscout24.it/cms-content-assets/4sbvd0wXw7X8nawHWYTFwV-6b2d7ef21862e9da173c25a5939b43a4-Fiat-500_Abarth-2012-1600-20-1100-1100.jpg",
         "year": 2010,
         "price": 3500,
         "available": true
@@ -21,7 +21,7 @@
         "brand": "Ford",
         "brandLogo": "https://picsum.photos/100/100?random=8",
         "model": "Taurus",
-        "modelImage": "https://picsum.photos/200/300?random=3",
+        "modelImage": "https://www.autoscout24.it/cms-content-assets/y6qAlpEqI7OVI6WkbFMZq-d21f45bc6a1f739a97443ee660f68446-ford-taurus-front-1100.jpeg",
         "year": 2009,
         "price": 5200,
         "available": false
@@ -30,7 +30,7 @@
         "brand": "Ford",
         "brandLogo": "https://picsum.photos/100/100?random=8",
         "model": "Focus",
-        "modelImage": "https://picsum.photos/200/300?random=4",
+        "modelImage": "https://images.ctfassets.net/uaddx06iwzdz/35gCEkFPutJ9p2sH6oQBtJ/835e8af4d7cab2d0706cedb7f5771829/ford-focus-side.jpg",
         "year": 2014,
         "price": 9700,
         "available": true
@@ -39,7 +39,7 @@
         "brand": "Audi",
         "brandLogo": "https://picsum.photos/100/100?random=9",
         "model": "A3",
-        "modelImage": "https://picsum.photos/200/300?random=5",
+        "modelImage": "https://cdn.drivek.com/configurator-imgs/cars/it/Original/AUDI/A3-SPORTBACK/39259_HATCHBACK-5-DOORS/audi-a3-sportback-2020-front-side.jpg",
         "year": 2012,
         "price": 4300,
         "available": true
@@ -48,7 +48,7 @@
         "brand": "Audi",
         "brandLogo": "https://picsum.photos/100/100?random=9",
         "model": "Q7",
-        "modelImage": "https://picsum.photos/200/300?random=6",
+        "modelImage": "https://www.autocogliati.it/wp-content/uploads/2023/10/1920x1080-Q7_2020_1986.jpeg",
         "year": 2020,
         "price": 41700,
         "available": false

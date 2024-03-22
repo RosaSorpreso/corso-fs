@@ -10,6 +10,7 @@ import { AudiComponent } from './pages/audi/audi.component';
 import { HeaderComponent } from './main-component/header/header.component';
 import { FooterComponent } from './main-component/footer/footer.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { HeroComponent } from './components/hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     AudiComponent,
     HeaderComponent,
     FooterComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
