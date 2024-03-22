@@ -9,8 +9,7 @@ import { FordComponent } from './pages/ford/ford.component';
 import { AudiComponent } from './pages/audi/audi.component';
 import { HeaderComponent } from './main-component/header/header.component';
 import { FooterComponent } from './main-component/footer/footer.component';
-import { CardComponent } from './components/card/card.component';
-import { RandomCardComponent } from './components/random-card/random-card.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +20,7 @@ import { RandomCardComponent } from './components/random-card/random-card.compon
     AudiComponent,
     HeaderComponent,
     FooterComponent,
-    CardComponent,
-    RandomCardComponent
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
