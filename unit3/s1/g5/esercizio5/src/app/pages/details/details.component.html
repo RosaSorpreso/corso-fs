@@ -1,6 +1,6 @@
 <app-hero></app-hero>
 
-<div [ngClass]="{'bg-success': car?.available, 'bg-danger': !car?.available}"
+<div *ngIf="car?.id" [ngClass]="{'bg-success': car?.available, 'bg-danger': !car?.available}"
   class="card">
     <img [src]="car?.modelImage" class="card-img-top img-card">
     <div class="card-body">
