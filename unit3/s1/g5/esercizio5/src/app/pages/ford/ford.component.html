@@ -7,7 +7,10 @@
     <img [src]="car.modelImage" class="card-img-top img-car">
     <div class="card-body">
       <h5 class="card-title text-white">{{car.model}}</h5>
-      <p class="card-text text-white">{{car.brand}}</p>
+      <div class="d-flex justify-content-between">
+        <a routerLink="/{{car.brand}}" class="btn btn-outline-light card-text">{{car.brand}}</a>
+        <a [routerLink]="['/details', car.id]" class="btn btn-info card-text">see more</a>
+      </div>
     </div>
   </div>
 </div>

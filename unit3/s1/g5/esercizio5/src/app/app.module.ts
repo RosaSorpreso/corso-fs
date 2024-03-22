@@ -11,6 +11,7 @@ import { HeaderComponent } from './main-component/header/header.component';
 import { FooterComponent } from './main-component/footer/footer.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HeroComponent } from './components/hero/hero.component';
+import { DetailsComponent } from './pages/details/details.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HeroComponent } from './components/hero/hero.component';
     HeaderComponent,
     FooterComponent,
     NotFoundComponent,
-    HeroComponent
+    HeroComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

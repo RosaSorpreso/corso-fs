@@ -1,0 +1,12 @@
+<app-hero></app-hero>
+
+<div [ngClass]="{'bg-success': car?.available, 'bg-danger': !car?.available}"
+  class="card">
+    <img [src]="car?.modelImage" class="card-img-top img-card">
+    <div class="card-body">
+      <h5 class="card-title text-white">{{car?.model}}</h5>
+      <p class="text-white">Year: {{car?.year}}</p>
+      <p class="text-white">{{car?.price | currency : 'EUR'}}</p>
+      <a routerLink="/{{car?.brand}}" class="btn btn-outline-light card-text">{{car?.brand}}</a>
+    </div>
+</div>
