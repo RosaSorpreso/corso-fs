@@ -1,0 +1,25 @@
+<div class="m-5">
+  <div class="d-flex flex-wrap justify-content-between border-bottom align-items-center pb-2 mb-3">
+    <h1>What's my task for the day?</h1>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Enter your name here" aria-label="Search">
+      <button class="btn btn-outline-light" type="submit">
+        <i class="bi bi-search text-secondary"></i>
+      </button>
+    </form>
+  </div>
+  <ul class="nav nav-pills d-flex gap-2">
+    <li class="nav-item">
+      <a class="btn btn-outline-success" routerLink="done">Done ✓</a>
+    </li>
+    <li class="nav-item">
+      <a class="btn btn-outline-danger" routerLink="not-completed">What's left?</a>
+    </li>
+    <li class="nav-item">
+      <a class="btn btn-outline-info" routerLink="by-user">By user</a>
+    </li>
+    <li class="nav-item">
+      <a class="btn btn-outline-primary" aria-current="page" routerLink="/">See All</a>
+    </li>
+  </ul>
+</div>
