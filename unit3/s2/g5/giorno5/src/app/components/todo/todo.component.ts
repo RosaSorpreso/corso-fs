@@ -17,4 +17,8 @@ export class TodoComponent {
   ngOnInit(){
     this.user = this.taskSvc.getUserById(this.task.id)
   }
+
+  onCheck(){
+    this.taskSvc.checkTodo(this.task.id)
+  }
 }
