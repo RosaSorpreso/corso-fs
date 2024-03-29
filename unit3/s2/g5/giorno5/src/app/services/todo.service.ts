@@ -923,7 +923,12 @@ export class TodoService {
     }
   }
 
-
   constructor(private userSvc: UserService) {}
+
+  getUserById(taskId: number):iUser | undefined{
+    let task = this.tasks.find(task => task.id === taskId)
+    return this.userSvc.users.find(user => user.id === task?.userId)
+  }
+
 
 }
