@@ -915,6 +915,15 @@ export class TodoService {
     return this.tasks
   }
 
+  getCheckedTodos(value:boolean){
+    if(value){
+      return this.tasks.filter(task => task.completed)
+    }else{
+      return this.tasks.filter(task => !task.completed)
+    }
+  }
+
+
   constructor(private userSvc: UserService) {}
 
 }
