@@ -5,27 +5,37 @@ import { NotCompletedComponent } from './pages/not-completed/not-completed.compo
 import { ByUserComponent } from './pages/by-user/by-user.component';
 import { SearchComponent } from './pages/search/search.component';
 import { DoneComponent } from './pages/done/done.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const routes: Routes = [
   {
     path:'',
-    component: HomepageComponent
+    component: HomepageComponent,
+    title: 'Tasks'
   },
   {
     path: 'done',
-    component: DoneComponent
+    component: DoneComponent,
+    title: 'Tasks Done'
   },
   {
     path: 'not-completed',
-    component: NotCompletedComponent
+    component: NotCompletedComponent,
+    title: 'Tasks to-do'
   },
   {
     path: 'by-user',
-    component: ByUserComponent
+    component: ByUserComponent,
+    title: 'Users Tasks'
   },
   {
     path:'search/:id',
-    component: SearchComponent
+    component: SearchComponent,
+    title: 'User Tasks'
+  },
+  {
+    path: '**',
+    component: NotFoundComponent
   }
 ];
 

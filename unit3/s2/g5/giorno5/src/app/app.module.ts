@@ -10,6 +10,8 @@ import { ByUserComponent } from './pages/by-user/by-user.component';
 import { HeaderComponent } from './main-components/header/header.component';
 import { SearchComponent } from './pages/search/search.component';
 import { DoneComponent } from './pages/done/done.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { TodoComponent } from './components/todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { DoneComponent } from './pages/done/done.component';
     HeaderComponent,
     SearchComponent,
     DoneComponent,
+    NotFoundComponent,
+    TodoComponent,
   ],
   imports: [
     BrowserModule,
