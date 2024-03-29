@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { iTodo } from '../models/i-todo';
 import { iUser } from '../models/i-user';
+import { TodoService } from './todo.service';
 
 @Injectable({
   providedIn: 'root'
@@ -814,4 +814,10 @@ export class UserService {
     return this.users
   }
 
+  constructor(private taskSvc: TodoService) {}
+
+  getUserById(taskId: number):iUser | undefined{
+    let task = this.taskSvc.tasks.find(task => task.id === taskId)
+    return this.users.find(user => user.id === task?.userId)
+  }
 }
