@@ -12,6 +12,7 @@ import { SearchComponent } from './pages/search/search.component';
 import { DoneComponent } from './pages/done/done.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { TodoComponent } from './components/todo/todo.component';
+import { UserComponent } from './components/user/user.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { TodoComponent } from './components/todo/todo.component';
     DoneComponent,
     NotFoundComponent,
     TodoComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,

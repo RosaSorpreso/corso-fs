@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-12 col-md-6 col-xl-4" *ngFor="let user of userTask">
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img [src]="user.user.image" class="img-fluid rounded-start">
+        </div>
+        <div class="col-md-8 border-start">
+          <div class="card-body">
+            <h5 class="card-title mb-0">{{user.user.firstName}} {{user.user.lastName}}</h5>
+            <p class="card-text fst-italic text-secondary">{{user.user.title}}</p>
+            <app-todo *ngFor="let task of user.task" [task]="task"></app-todo>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
