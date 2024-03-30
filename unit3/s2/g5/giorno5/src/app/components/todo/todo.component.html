@@ -3,9 +3,8 @@
 role="alert">
   <div class="d-flex gap-2 align-items-start">
     <input type="checkbox"
-    [id]="task.id" class="mt-2"
-    [checked]="task.completed"
-    (change)="onCheck()">
+    [(ngModel)]="task.completed"
+    class="mt-2">
     <div>
       <p class="fs-5 fw-bold mb-0">{{task.todo}}</p>
       <p class="mb-0">Assigned to: <span class="fst-italic">

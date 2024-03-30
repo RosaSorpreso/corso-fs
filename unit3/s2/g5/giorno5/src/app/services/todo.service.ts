@@ -923,13 +923,4 @@ export class TodoService {
     }
   }
 
-  checkTodo(id:number){
-    let task = this.tasks.find(task => task.id === id)
-    if(task!.completed){
-      task!.completed = false
-    }else{
-      task!.completed = true
-    }
-  }
-
 }
