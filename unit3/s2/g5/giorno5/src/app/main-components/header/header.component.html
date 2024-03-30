@@ -10,19 +10,27 @@
   </div>
   <ul class="nav nav-pills d-flex gap-2">
     <li class="nav-item">
-      <a class="btn btn-outline-success" routerLink="done">
+      <a class="btn btn-outline-success"
+      [ngClass]="{'active': isThisPage('done')}"
+      routerLink="done">
         Done <i class="bi bi-check2-circle"></i></a>
     </li>
     <li class="nav-item">
-      <a class="btn btn-outline-danger" routerLink="not-completed">
+      <a class="btn btn-outline-danger"
+      [ngClass]="{'active': isThisPage('not-completed')}"
+      routerLink="not-completed">
         What's left? <i class="bi bi-list-task"></i></a>
     </li>
     <li class="nav-item">
-      <a class="btn btn-outline-info" routerLink="by-user">
+      <a class="btn btn-outline-info"
+      [ngClass]="{'active': isThisPage('by-user')}"
+      routerLink="by-user">
         By User <i class="bi bi-person-lines-fill"></i></a>
     </li>
     <li class="nav-item">
-      <a class="btn btn-outline-primary" aria-current="page" routerLink="/">
+      <a class="btn btn-outline-primary"
+      [ngClass]="{'active': isThisPage('')}"
+      aria-current="page" routerLink="/">
         See All <i class="bi bi-list-check"></i></a>
     </li>
   </ul>
