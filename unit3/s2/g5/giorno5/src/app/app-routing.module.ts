@@ -11,27 +11,27 @@ const routes: Routes = [
   {
     path:'',
     component: HomepageComponent,
-    title: 'Tasks'
+    title: "All Tasks"
   },
   {
     path: 'done',
     component: DoneComponent,
-    title: 'Tasks Done'
+    title: "Tasks Done"
   },
   {
     path: 'not-completed',
     component: NotCompletedComponent,
-    title: 'Tasks to-do'
+    title: "Tasks to-do"
   },
   {
     path: 'by-user',
     component: ByUserComponent,
-    title: 'Users Tasks'
+    title: "User's Tasks"
   },
   {
     path:'search/:id',
     component: SearchComponent,
-    title: 'User Tasks'
+    title: "User Tasks"
   },
   {
     path: '**',
