@@ -4,15 +4,15 @@
       <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
         <div class="form-floating mb-3">
           <input [(ngModel)]="login.email"
-          type="email" class="form-control" id="floatingInput" name="email">
+          type="email" class="form-control" name="email">
           <label for="floatingInput">Email address</label>
         </div>
         <div class="form-floating mb-3">
           <input [(ngModel)]="login.password"
-          type="password" class="form-control" id="floatingPassword" name="password">
+          type="password" class="form-control" name="password">
           <label for="floatingPassword">Password</label>
         </div>
-        <button (click)="signIn()" class="w-100 btn btn-lg btn-primary" type="submit">Sign In</button>
+        <button (click)="signIn()" class="w-100 btn btn-lg btn-primary">Sign In</button>
         <hr class="my-4">
         <small class="text-body-secondary">First time on <span class="fst-italic">Ross+</span>?
           <a routerLink="/register" class="text-decoration-none">Sign Up!</a> </small>
