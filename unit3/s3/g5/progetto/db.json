@@ -1,5 +1,48 @@
 {
-  "users":[],
-  "movies":[],
-  "favorites":[]
+  "users": [
+    {
+      "email": "luca@val.it",
+      "password": "$2a$10$xWPZQdqBOQNwwLN40circ.gnJa73rR7w3YtT2WF4M8TsGxYEgmYTK",
+      "firstName": "luca",
+      "lastName": "valentinuzzi",
+      "id": 1
+    },
+    {
+      "email": "rosasorpreso@gmail.com",
+      "password": "$2a$10$B.p3rk/2zWSGr9Te26Vr3O/zK/0CUbFINPnAPkU1gepl8siF1Gkh2",
+      "firstName": "rosa",
+      "lastName": "sorpreso",
+      "id": 2
+    },
+    {
+      "email": "franz@nat.it",
+      "password": "$2a$10$Kyyw25k3VaYmZVauBtlnGOivm/h7YWNrekkxHuPbs7yTXhkFSK/WO",
+      "firstName": "franz ",
+      "lastName": "natavio",
+      "id": 3
+    },
+    {
+      "email": "dario@tedesco.it",
+      "password": "$2a$10$s14IMbLLlb1AhmFtAjfg5e5RxMvhmuwP65o32wXQLaWSnfCOX.hD2",
+      "firstName": "dario",
+      "lastName": "tedesco",
+      "id": 4
+    },
+    {
+      "email": "diego@cane.it",
+      "password": "$2a$10$qLKh2ESto1ArQwObvJvo3egFDJxgMA.q70wmYSqK8EO0B24yasJoO",
+      "firstName": "diego",
+      "lastName": "cane",
+      "id": 5
+    },
+    {
+      "email": "andrea@roma.it",
+      "password": "$2a$10$GPen7j5b9QKteYy6u9.jde6EEdCEVb3XsdAJLmfJ7fZf6xw7A2Cay",
+      "firstName": "andrea",
+      "lastName": "forza roma",
+      "id": 6
+    }
+  ],
+  "movies": [],
+  "favorites": []
 }
