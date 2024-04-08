@@ -1,1 +1,8 @@
-<p>profile works!</p>
+<div class="container text-center d-flex flex-column align-items-center">
+  <p class="my-3 fs-1">My Profile:</p>
+  <div class="alert alert-success p-4">
+    <p class="fs-4">First Name: <b>{{user?.firstName | titlecase}}</b></p>
+    <p class="fs-4">Last Name: <b>{{user?.lastName | titlecase}}</b></p>
+    <p class="fs-4">Email: <b>{{user?.email}}</b></p>
+  </div>
+</div>

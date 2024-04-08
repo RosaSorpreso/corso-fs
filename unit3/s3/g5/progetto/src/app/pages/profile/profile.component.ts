@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { iUser } from '../../models/iuser';
+import { AuthService } from '../auth/auth.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class ProfileComponent {
 
+  user: iUser | undefined;
+
+  constructor(private authSvc: AuthService) {}
+
+  ngOnInit(){
+    this.authSvc.user$.subscribe(user => {
+      this.user = user || undefined;
+    })
+  }
 }

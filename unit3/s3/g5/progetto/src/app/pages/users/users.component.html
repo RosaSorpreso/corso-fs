@@ -1,1 +1,12 @@
-<p>users works!</p>
+<div class="container mt-5">
+  <h1 class="my-5 text-center">Users:</h1>
+  <div *ngFor="let user of users"
+  class="alert alert-success border-success d-flex flex-wrap gap-3 align-items-end justify-content-between">
+    <div class="d-flex gap-2 align-items-end">
+      <p class="mb-1 fs-5">{{user.id}}.</p>
+      <p class="mb-0 fs-3">{{user.firstName | uppercase}}</p>
+      <p class="mb-0 fs-3">{{user.lastName | uppercase}}</p>
+    </div>
+    <p class="mb-1 fs-5 fst-italic">{{user.email}}</p>
+  </div>
+</div>

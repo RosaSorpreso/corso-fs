@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand">Navbar</a>
+<nav class="navbar navbar-expand">
+  <div class="container d-flex gap-2">
+    <a class="navbar-brand text-success fw-bold">Ross+</a>
     <div *ngIf="isUserLoggedIn">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -10,12 +10,12 @@
           <a class="nav-link" routerLink="users">Users</a>
         </li>
         <div class="dropdown">
-          <button (click)="show = !show" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown button
+          <button (click)="show = !show" class="btn btn-outline-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {{user?.firstName | titlecase}}
           </button>
-          <ul class="dropdown-menu" [ngClass]="{show}">
+          <ul class="dropdown-menu dropdown-menu-lg-end" [ngClass]="{show}">
             <li><a class="dropdown-item" routerLink="profile">Profile</a></li>
-            <button (click)="logout()">Log Out</button>
+            <button (click)="logout()" class="btn btn-danger ms-1">Log Out</button>
           </ul>
         </div>
       </ul>
